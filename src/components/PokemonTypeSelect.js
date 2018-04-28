@@ -35,7 +35,7 @@ class PokemonTypeSelect extends Component {
         return (
             <div>
                 <select ref={node => this.pokemonType = node} onChange={this.handleChange} value={selectValue} className="form-control">
-                    <option></option>
+                    <option>All</option>
                     {fetchTypes.map(this.renderField)}
                 </select>                
             </div>
